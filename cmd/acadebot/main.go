@@ -26,7 +26,7 @@ var bot *tgbotapi.BotAPI
 
 func init() {
 	token := os.Getenv(envAPIKey)
-	slog.Info("Token:", slog.Any("token", token)) // TODO BUG
+	slog.Info("Token:", slog.Any("token", token))
 
 	b, err := tgbotapi.NewBotAPI(token)
 	if err != nil {
